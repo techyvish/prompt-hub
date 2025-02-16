@@ -1,29 +1,73 @@
 I'd like to learn about a {SUBJECT}. Remember, I want to master the {SUBJECT}. Please explain {SUBJECT} to me using compact, progressively challenging pieces of information, or "steps". My aim is to undertake an extensive, in-depth learning journey, comprising at least 1000 steps. Each step should be organized as follows:
 
-**SECTION 1:** The first section introduces a new concept. Use analogy from daily life objects, events etc. Make topic easier to grasp and memorize. Prepare mnemonic wherever possible. Then introduce formal definition and related topics. After the introduction, you should ask if I've understood the theory. If my response is negative, you must provide supplementary explanations until I confirm my understanding. However, if my response is positive, we move on to the second section. If I ask any unknown topic in the SECTION 1, then please give me extensive, in-depth explanation of the topic. 
+**SECTION 1:** The first section introduces a new concept. Use analogy from daily life objects, events etc. Make topic easier to grasp and memorize. Prepare mnemonic wherever possible. Then introduce formal definition and related topics. if {SUBJECT} involves coding then include code examples as well and explain code line by line. Also crate a mindmap using syntax mentioned in the `Mindmap Syntax` section. Create mindmap for important topics from the definition. DO NOT create mindmap nodes for mnemonics, examples, analogy etc. After the introduction, you should ask if I've understood the theory. If my response is negative, you must provide supplementary explanations until I confirm my understanding. However, if my response is positive, we move on to the second section. If I ask any unknown topic in the SECTION 1, then please give me extensive, in-depth explanation of the topic. Do NOT use LaTex syntex in this section while writing mathematical formula. Clearly show mathematical equations without any errors. Only use LaTex syntax while creating a mindmap.
 
-**SECTION 2:** The second section of each step involves a question to evaluate my understanding of the newly introduced concept. The question must be related to topic covered in SECTION1. The question should be theory-based, something I can explain in words, answer with a simple 'yes' or 'no', or even respond to as part of a multiple-choice question. If I respond correctly, we transition to the third section. Do not ask questions that require mathematical equations solve without introducing the equation in SECTION 1. You can ask mathematical equations in this section after introducing it properly in SECTION 1. If I respond `I don’t know` then explain me answer in detail and then move on to next section. 
+**SECTION 2:** The second section of each step involves a question to evaluate my understanding of the newly introduced concept. The question must be related to topic covered in SECTION1. The question should be theory-based, something I can explain in words, answer with a simple 'yes' or 'no', or even respond to as part of a multiple-choice question. If I respond correctly, we transition to the third section. Do not ask questions that require mathematical equations solve without introducing the equation in SECTION 1. You can ask mathematical equations in this section after introducing it properly in SECTION 1. If I respond `I don’t know` then explain me answer in detail and then move on to next section. Do not create mindmap for this section. 
 
-**SECTION 3:** Before you start SECTION 3, give the result of the previous question using word `right` or `wrong`. In both cases, explain the correct answer briefly. In the third section, you'll pose a more challenging question, often incorporating elements such as numbers, mathematics, or probability. This section is designed to test my comprehension in a way that may necessitate me jotting down numbers, mathematical equations, or sketches to formulate an answer.
+**SECTION 3:** Before you start SECTION 3, give the result of the previous question using word `right` or `wrong`. In both cases, explain the correct answer briefly. In the third section, you'll pose a more challenging question, often incorporating elements such as numbers, mathematics, or probability. This section is designed to test my comprehension in a way that may necessitate me jotting down numbers, mathematical equations, or sketches to formulate an answer. Do not create mindmap for this section.
 
-**SECTION 4:** Before you start SECTION 4, give the result of the previous question using word `right` or `wrong`. In both cases, explain the correct answer briefly. In the third section, you'll summarize everything I've learned in this section. Make it easy to memorize, and can be turned into flash cards. Create as many flashcards as you can. Name of flashcards should be Flashcard 1, Flashcard 2, and so on. Also include any important formula or equations discussed, calculations performed.
+**SECTION 4:** Before you start SECTION 4, give the result of the previous question using word `right` or `wrong`. In both cases, explain the correct answer briefly. In the third section, you'll summarize everything I've learned in this section. Make it easy to memorize, and can be turned into flash cards. Create as many flashcards as you can. Name of flashcards should be Flashcard 1, Flashcard 2, and so on. Also include any important formula or equations discussed, calculations performed. Do not create mindmap for this section.
 
 **Rules**
 
 - These are the four sections that should be present in each of the 1000+ steps.
 
-- Ensure to precede each response with the appropriate title for the current step/section. For instance, following this prompt, you should begin with the title: "Step 1: Section 1".
+- Ensure to precede each response with the appropriate title for the current step/section. For instance, following this prompt, you should begin with the title: "Step 1: Section 1". Create appropriate title for `SECTION 1` of each steps. Make it bold. Title should be 5 to 8 words long. It should be easy to memorize and accurately describe the topic introduced in that `SECTION` 
 
-- Suppose I fail to understand the new concept; you must respond with additional information, again with the title "Step 1: Section 1", until I indicate that I've understood.
+
+- Suppose I fail to understand the new concept; you must respond with additional information, again with the title "Step 1: Section 1", until I indicate that I've understood. 
 
 - If I ask a question about some topic that I did not understand then you should create a new section "Section 1: Step 1: Aside 1". If I have more questions on the same topic, name it "Section 1: Step 1: Aside 2". So, if I successfully understand this topic, then take me back to the "Section 1: Step 1"
 
 - Afterward, proceed to "Step 1: Section 2", where you'll present a theoretical question to assess my understanding. If I answer incorrectly, inform me of my error while maintaining the title "Step 1: Section 2". I can make several attempts at your question, and you should only provide additional information to assist me if I request it.
 
-- Once I answer correctly, proceed to "Step 1: Section 3", where you'll present a more complex question, which may involve numbers, mathematics, or sketches. If I've successfully solved challenging questions in "Step 1: Section 3" then you should ask me `do you want more questions?` if I say yes then you should ask me more questoins otherwise move on to  "Step 1: Section 4"
+- Once I answer correctly, proceed to "Step 1: Section 3", where you'll present a more complex question, which may involve numbers, mathematics, or sketches. If I've successfully solved challenging questions in "Step 1: Section 3" then you should ask me `do you want more questions?` if I say yes then you should ask me more questions otherwise move on to  "Step 1: Section 4"
 
 - Then move on to "Step 1: Section 4" where you'll summarize the topic for me for easy recall. Please make flashcards to easy remember and recall. Once I answer 'I memorize', progress to "Step 2: Section 1", where a new concept is introduced.
 
-- make sure mark every section with setp. example: `Step 1: Section 1`, `Step 1: Section 2`, `Step 1: Section 3`, `Step 2: Section 1`. Always keep track of Step, Section and Aside. 
+- make sure mark every section with step. example: `Step 1: Section 1`, `Step 1: Section 2`, `Step 1: Section 3`, `Step 2: Section 1`. Always keep track of Step, Section and Aside. 
+
+**Mindmap Syntax**
+
+## Summarize the `SECTION` into a mermaid mindmap notation. Use following rules for creating mermaid mindmap notation
+
+## It should start with the word mindmap, and the first node has to be the "root" node followed by two brackets and {SUBJECT} should be in the bracket
+- example: root(({SUBJECT}))
+
+## Every `SECTION 1` is the "subnode" of the "root" node. 
+
+## DO NOT create mindmap nodes for mnemonics, examples, analogy etc mentioned in `SECTION 1`.
+
+## ideas then are grouped under each other, where each sub-idea needs right indented under it's parents. Only create root-node for `Step 1: Section 1`. `Step 2: Section 1`, `Step 3: Section 1` should follow same indentation as `SECTION 1` 
+
+## Except for the root node, Ideas and subnodes shouldn't include any types of brackets, like curly brackets, brackets, or square brackets
+
+## Add any formula, equations using LaTex syntax. Only use LaTex syntax while creating a mindmap.
+
+## The last subnode is called a leaf node. Create as many subnodes as you want to correctly map the idea. Do not limit to any number of subnodes. More dense tree is better for me to learn the topic.  
+
+## Add at least 80 words description in the leaf-node so I can visualize/remember a topic. 
+
+## Limit the root node to 3 words maximum and the sub-nodes should have title and description for easy recall
+
+## see the example mind-map in triple-quotes below: This is Just example don't use this to create a section. 
+
+```
+mindmap
+root((**Ensemble Learning**))
+    **Core Idea**
+        **Combine Learners:** Combines multiple learners to solve a problem
+        **Improve Accuracy:** Aims to improve prediction accuracy and robustness
+    **Base Learners**
+        **Individual Models:**  Individual models that are combined
+        **Weak Learners:** Often simpler or weaker models
+    **Combining Methods**
+        **Aggregation Strategy:** Strategy to combine predictions
+        **Examples:** Voting, Averaging
+    **Types**
+        **Bagging:**  Example: Random Forest
+        **Boosting:** Example: AdaBoost, Gradient Boosting
+        **Stacking:**  More complex combination method
+```
 
 Our comprehensive 1000+ step journey begins now. {SUBJECT}:
